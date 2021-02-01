@@ -1,132 +1,90 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8">
 		<title></title>
 		<style type="text/css">
-			
-			#box1{
-				width: 100px;
-				height: 100px;
-				background-color: red;
-				position: absolute;
+			#surreal div {
+			    font-size: 18px;
+			    width: 20em;
+			    height: 10em;
+			    margin-left: -10em;
+			    margin-top: -5em;
+			    background-repeat: no-repeat;
+			    background-image: radial-gradient(ellipse,white 60%,rgba(255,255,255,0) 60.1%),radial-gradient(ellipse,#ccc 60%,rgba(255,255,255,0) 60.1%),linear-gradient(
+			120deg
+			,transparent 1em,#daa520 1em,#daa520 4.5em,transparent 4.5em),linear-gradient(
+			120deg
+			,transparent 1em,#8b4513 1em,#8b4513 1.5em,#ffb6c1 1.5em,#ffb6c1 1.7em,#8b4513 1.7em,#8b4513 2.2em,#ffb6c1 2.2em,#ffb6c1 2.4em,#8b4513 2.4em,#8b4513 2.9em,#ffb6c1 2.9em,#ffb6c1 3.1em,#8b4513 3.1em,#8b4513 3.6em,#ffb6c1 3.6em,#ffb6c1 3.8em,#8b4513 3.8em,#8b4513 4.3em,#daa520 4.3em,#daa520 4.5em,transparent 4.5em),radial-gradient(ellipse,#daa520 60%,rgba(218,165,32,0) 61%),radial-gradient(ellipse,rgba(255,255,255,0.5) 60%,rgba(255,255,255,0) 61%),radial-gradient(ellipse,#daa520 60%,rgba(218,165,32,0) 61%),radial-gradient(ellipse,rgba(255,255,255,0.5) 60%,rgba(255,255,255,0) 61%),radial-gradient(ellipse at 50% 100%,#ffd700 58.8%,rgba(255,215,0,0) 59.5%),linear-gradient(#ffd700,#ffd700),radial-gradient(ellipse,white 60%,rgba(255,255,255,0) 60.1%),radial-gradient(ellipse,#ccc 60%,rgba(255,255,255,0) 60.1%),radial-gradient(circle,black 60%,rgba(0,0,0,0) 61%),radial-gradient(circle,black 60%,rgba(0,0,0,0) 61%),radial-gradient(circle,black 60%,rgba(0,0,0,0) 61%),radial-gradient(circle,white 60%,rgba(255,255,255,0) 61%),radial-gradient(circle,#ffc0cb 30%,white 30.5%,white 60%,rgba(255,255,255,0) 61%),radial-gradient(circle,#ffc0cb 30%,white 30.5%,white 60%,rgba(255,255,255,0) 61%),radial-gradient(circle,white 60%,rgba(255,255,255,0) 61%),radial-gradient(circle,white 60%,rgba(255,255,255,0) 61%);
+			    background-size: 12em 3.2em,12em 3.6em,6em .2em,6em 2.1em,.6em .6em,.6em .6em,.4em .4em,.4em .4em,2em 2.5em,2em 1em,9em 1.6em,9em 1.9em,.4em .4em,.2em .2em,.2em .2em,1.5em 1.5em,.9em .9em,.9em .9em,.6em .7em,.6em .7em;
+			    background-position: 0 93%,0 100%,right 1.55em bottom 4.5em,right 1.5em bottom 2.6em,right 1.9em bottom 3.5em,right 2em bottom 3.5em,right 2.5em bottom 2.8em,right 2.6em bottom 2.8em,right 1.4em bottom 2.6em,right 2em bottom 2.6em,right bottom 1.9em,right bottom 1.6em,left 5.45em bottom 6.9em,left 5.3em bottom 7.6em,left 5.8em bottom 7.6em,left 4.9em bottom 6.7em,left 4.7em bottom 7.7em,left 5.7em bottom 7.7em,left 4.4em bottom 6.7em,left 6.4em bottom 6.7em;
 			}
 			
-			#box2{
-				width: 100px;
-				height: 100px;
-				background-color: yellow;
-				position: absolute;
-				
-				left: 200px;
-				top: 200px;
+			
+			#surreal {
+			    background-color: #5f9ea0;
 			}
 			
+			
+			.entry {
+			    text-align: center;
+			    min-height: 400px;
+			    position: relative;
+			}
+			
+			.entry div {
+			    position: absolute;
+			    left: 50%;
+			    top: 50%;
+			}
+			
+			#surreal div:before {
+			    width: 8em;
+			    height: 5em;
+			    left: 2em;
+			    bottom: 1.2em;
+			    background-repeat: no-repeat;
+			    background-image: radial-gradient(circle,#b68a1b 60%,rgba(218,165,32,0) 61%),radial-gradient(circle,rgba(255,255,255,0.3) 60%,rgba(255,255,255,0) 61%),radial-gradient(circle,#b68a1b 60%,rgba(218,165,32,0) 61%),radial-gradient(circle,rgba(255,255,255,0.3) 60%,rgba(255,255,255,0) 61%),radial-gradient(circle,#b68a1b 60%,rgba(218,165,32,0) 61%),radial-gradient(circle,rgba(255,255,255,0.3) 60%,rgba(255,255,255,0) 61%),radial-gradient(circle,#b68a1b 60%,rgba(218,165,32,0) 61%),radial-gradient(circle,rgba(255,255,255,0.3) 60%,rgba(255,255,255,0) 61%),-webkit-gradient(linear,left top, left bottom,from(#daa520),to(#daa520)),-webkit-gradient(linear,left top, left bottom,from(#daa520),to(#daa520)),-webkit-gradient(linear,left top, left bottom,from(#daa520),to(#daa520)),-webkit-gradient(linear,left top, left bottom,from(#daa520),to(#daa520)),repeating-linear-gradient(to bottom,#8b4513,#8b4513 .6em,#ffb6c1 .6em,#ffb6c1 .8em);
+			    background-image: radial-gradient(circle,#b68a1b 60%,rgba(218,165,32,0) 61%),radial-gradient(circle,rgba(255,255,255,0.3) 60%,rgba(255,255,255,0) 61%),radial-gradient(circle,#b68a1b 60%,rgba(218,165,32,0) 61%),radial-gradient(circle,rgba(255,255,255,0.3) 60%,rgba(255,255,255,0) 61%),radial-gradient(circle,#b68a1b 60%,rgba(218,165,32,0) 61%),radial-gradient(circle,rgba(255,255,255,0.3) 60%,rgba(255,255,255,0) 61%),radial-gradient(circle,#b68a1b 60%,rgba(218,165,32,0) 61%),radial-gradient(circle,rgba(255,255,255,0.3) 60%,rgba(255,255,255,0) 61%),linear-gradient(#daa520,#daa520),linear-gradient(#daa520,#daa520),linear-gradient(#daa520,#daa520),linear-gradient(#daa520,#daa520),repeating-linear-gradient(to bottom,#8b4513,#8b4513 .6em,#ffb6c1 .6em,#ffb6c1 .8em);
+			    background-size: 1em 1em,1em 1em,1em 1em,1em 1em,.6em .6em,.6em .6em,.6em .6em,.6em .6em,69.5% 83%,50% 50%,50% 5%,4% 76%,45% 76%;
+			    background-position: 20% 40%,18.5% 40%,50% 75%,48.5% 75%,59% 35%,57.5% 35%,10% 80%,8.5% 80%,0 100%,0 0,100% 0,100.5% 20%,100% 20%;
+			    border-bottom-left-radius: 5em 1em;
+			    border-bottom-right-radius: 5em 1em;
+			    -webkit-animation: cheese 500ms infinite ease-in-out;
+			    animation: cheese 500ms infinite ease-in-out;
+			}
+			.entry div:before, .entry div:after {
+			    display: block;
+			    content: '';
+			    position: absolute;
+			}
+			
+			#surreal div:after {
+			    width: 8em;
+			    height: 1.8em;
+			    left: 2em;
+			    bottom: 5.3em;
+			    background-repeat: no-repeat;
+			    background-image: radial-gradient(ellipse,black 60%,rgba(0,0,0,0) 61%),radial-gradient(ellipse,white 60%,rgba(255,255,255,0) 61%),radial-gradient(ellipse,white 60%,rgba(255,255,255,0) 61%),radial-gradient(ellipse,#daa520 60%,rgba(218,165,32,0) 61%),radial-gradient(ellipse,rgba(255,255,255,0.5) 60%,rgba(255,255,255,0) 61%),radial-gradient(ellipse,#daa520 60%,rgba(218,165,32,0) 61%),radial-gradient(ellipse,rgba(255,255,255,0.5) 60%,rgba(255,255,255,0) 61%),radial-gradient(ellipse,#daa520 60%,rgba(218,165,32,0) 61%),radial-gradient(ellipse,rgba(255,255,255,0.5) 60%,rgba(255,255,255,0) 61%),linear-gradient(#ffd700,#ffd700),linear-gradient(
+			40deg
+			,#ffd700 61%,rgba(255,215,0,0) 61.5%);
+			    background-size: .4em .4em,.6em .6em,.6em .6em,.8em .3em,.8em .3em,1em .4em,1em .4em,1.2em .5em,1.2em .5em,100% 50%,100% 55%;
+			    background-position: left 3.45em top -.2em,left 2.4em top -.3em,left 4.4em top -.3em,75% 25%,73% 25%,18% 40%,16% 40%,45% 70%,43% 70%,0 0,0 100%;
+			    border-radius: 50%;
+			}
+			
+			.entry div:before, .entry div:after {
+			    display: block;
+			    content: '';
+			    position: absolute;
+			}
 		</style>
-		
-		<script type="text/javascript">
-			
-			window.onload = function(){
-				/*
-				 * 拖拽box1元素
-				 *  - 拖拽的流程
-				 * 		1.当鼠标在被拖拽元素上按下时，开始拖拽  onmousedown
-				 * 		2.当鼠标移动时被拖拽元素跟随鼠标移动 onmousemove
-				 * 		3.当鼠标松开时，被拖拽元素固定在当前位置	onmouseup
-				 */
-				
-				//获取box1
-				var box1 = document.getElementById("box1");
-				var box2 = document.getElementById("box2");
-				var img1 = document.getElementById("img1");
-				
-				//开启box1的拖拽
-				drag(box1);
-				//开启box2的
-				drag(box2);
-				
-				drag(img1);
-				
-				
-				
-				
-			};
-			
-			/*
-			 * 提取一个专门用来设置拖拽的函数
-			 * 参数：开启拖拽的元素
-			 */
-			function drag(obj){
-				//当鼠标在被拖拽元素上按下时，开始拖拽  onmousedown
-				obj.onmousedown = function(event){
-					
-					//设置box1捕获所有鼠标按下的事件
-					/*
-					 * setCapture()
-					 * 	- 只有IE支持，但是在火狐中调用时不会报错，
-					 * 		而如果使用chrome调用，会报错
-					 */
-					/*if(box1.setCapture){
-						box1.setCapture();
-					}*/
-					obj.setCapture && obj.setCapture();
-					
-					
-					event = event || window.event;
-					//div的偏移量 鼠标.clentX - 元素.offsetLeft
-					//div的偏移量 鼠标.clentY - 元素.offsetTop
-					var ol = event.clientX - obj.offsetLeft;
-					var ot = event.clientY - obj.offsetTop;
-					
-					
-					//为document绑定一个onmousemove事件
-					document.onmousemove = function(event){
-						event = event || window.event;
-						//当鼠标移动时被拖拽元素跟随鼠标移动 onmousemove
-						//获取鼠标的坐标
-						var left = event.clientX - ol;
-						var top = event.clientY - ot;
-						
-						//修改box1的位置
-						obj.style.left = left+"px";
-						obj.style.top = top+"px";
-						
-					};
-					
-					//为document绑定一个鼠标松开事件
-					document.onmouseup = function(){
-						//当鼠标松开时，被拖拽元素固定在当前位置	onmouseup
-						//取消document的onmousemove事件
-						document.onmousemove = null;
-						//取消document的onmouseup事件
-						document.onmouseup = null;
-						//当鼠标松开时，取消对事件的捕获
-						obj.releaseCapture && obj.releaseCapture();
-					};
-					
-					/*
-					 * 当我们拖拽一个网页中的内容时，浏览器会默认去搜索引擎中搜索内容，
-					 * 	此时会导致拖拽功能的异常，这个是浏览器提供的默认行为，
-					 * 	如果不希望发生这个行为，则可以通过return false来取消默认行为
-					 * 
-					 * 但是这招对IE8不起作用
-					 */
-					return false;
-					
-				};
-			}
-			
-			
-		</script>
 	</head>
 	<body>
-		
-		我是一段文字
-		
-		<div id="box1"></div>
-		
-		<div id="box2"></div>
-		
-		<img src="https://cdn.jsdelivr.net/gh/readmeplz/images@main/img/an.jpg" id="img1" style="position: absolute;"/>
+		<div class="entry" id="surreal">
+			<div>
+				
+			</div>
+		</div>
 	</body>
 </html>
