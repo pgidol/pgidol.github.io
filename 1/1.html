@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>注册页面</title>
+		<style type="text/css">
+			#info{
+				width: 300px;
+				height: 500px;
+				background-color: #BBFFAA;
+				overflow: auto;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var verify = document.getElementById("verify");
+				var sub = document.getElementById("sub");
+				var info = document.getElementById("info");
+				
+				info.onscroll = function(){
+					if(info.scrollHeight == info.clientHeight + info.scrollTop){
+						sub.disabled = false;
+					}else{
+						// sub.disabled = true;
+					}
+				}
+				
+				
+				
+				sub.onclick = function(){
+					if(info.clientHeight + info.scrollTop == info.scrollHeight & verify.checked == true){
+						alert("success");
+					}else{
+						alert("请阅读完并将我同意选中！")
+					}
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<h2>尊敬的用户，欢迎您注册！</h2>
+		<p id="info">请仔细阅读完下列条款后注册。<br><br><br>
+		　　尊敬的用户我是您爹是怎么回事呢？尊敬的用户相信大家都很熟悉，但是尊敬的用户我是您爹是怎么回事呢，下面就让小编带大家一起了解吧。
+		　　尊敬的用户我是您爹，其实就是尊敬的用户，我是您爹，大家可能会很惊讶尊敬的用户怎么会我是您爹呢？但事实就是这样，小编也感到非常惊讶。
+		　　这就是关于尊敬的用户我是您爹的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！
+		　　尊敬的用户我是您爹是怎么回事呢？尊敬的用户相信大家都很熟悉，但是尊敬的用户我是您爹是怎么回事呢，下面就让小编带大家一起了解吧。
+		　　尊敬的用户我是您爹，其实就是尊敬的用户，我是您爹，大家可能会很惊讶尊敬的用户怎么会我是您爹呢？但事实就是这样，小编也感到非常惊讶。
+		　　这就是关于尊敬的用户我是您爹的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！
+		　　尊敬的用户我是您爹是怎么回事呢？尊敬的用户相信大家都很熟悉，但是尊敬的用户我是您爹是怎么回事呢，下面就让小编带大家一起了解吧。
+		　　尊敬的用户我是您爹，其实就是尊敬的用户，我是您爹，大家可能会很惊讶尊敬的用户怎么会我是您爹呢？但事实就是这样，小编也感到非常惊讶。
+		　　这就是关于尊敬的用户我是您爹的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！
+		　　尊敬的用户我是您爹是怎么回事呢？尊敬的用户相信大家都很熟悉，但是尊敬的用户我是您爹是怎么回事呢，下面就让小编带大家一起了解吧。
+		　　尊敬的用户我是您爹，其实就是尊敬的用户，我是您爹，大家可能会很惊讶尊敬的用户怎么会我是您爹呢？但事实就是这样，小编也感到非常惊讶。
+		　　这就是关于尊敬的用户我是您爹的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！
+		　　尊敬的用户我是您爹是怎么回事呢？尊敬的用户相信大家都很熟悉，但是尊敬的用户我是您爹是怎么回事呢，下面就让小编带大家一起了解吧。
+		　　尊敬的用户我是您爹，其实就是尊敬的用户，我是您爹，大家可能会很惊讶尊敬的用户怎么会我是您爹呢？但事实就是这样，小编也感到非常惊讶。
+		　　这就是关于尊敬的用户我是您爹的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！</p>
+		</p>
+		<input type="checkbox" name="verify" id="verify" value="" />
+		<span>我已阅读完，并同意。</span>
+		<input type="button" name="sub" id="sub" value="注册" disabled="disabled" />
+		
+	</body>
+</html>
