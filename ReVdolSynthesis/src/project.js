@@ -987,9 +987,9 @@ window.__require = function e(t, n, o) {
                         scale: .9
                     }).union().repeatForever().start()
                 }, t.prototype.update = function(e) {}, t.prototype.adsButtonFunc2 = function() {
-                    //window.location.href = "https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/yupi_wechat.png"
+                    window.location.href = "https://activity.doumobfour.club/horse?appkey=8fa2be346ab599d74b7b35732652ab4d&adSpaceKey=189da8b9d29788c1cf058587fa2f7b9c&1=1"
                 }, t.prototype.bannerButtonFunc = function() {
-                    //window.location.href = "https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/yupi_wechat.png"
+                    window.location.href = "https://interaction.clotfun.online/horse?appkey=8fa2be346ab599d74b7b35732652ab4d&adSpaceKey=1baa3dd0d2eeb6e18a5f7a6d6e410e1a&from=H5&1=1"
                 }, t.prototype.ShowFailedUi = function(e, t) {
                     var n = this;
                     this.scheduleOnce(function() {
@@ -1007,7 +1007,7 @@ window.__require = function e(t, n, o) {
                     this.canClick && 0 == cc.find("Canvas/uiEffectPanel").childrenCount && a.default.Instance.RestartGame()
                 }, t.prototype.OnClickMoreGame = function() {
                     this.canClick && (this.moreGameBtn.off(cc.Node.EventType.TOUCH_START, this.OnClickMoreGame, this), this.canClick = !1, this.moreGameBtn.runAction(cc.sequence(cc.scaleTo(.1, 1.1), cc.scaleTo(.1, 1))), this.scheduleOnce(function() {
-                        //window.location.href = "http://m.wesane.com/"
+                        // window.location.href = "http://m.wesane.com/"
                     }, .15))
                 }, t.prototype.GetContentByScore = function(e) {
                     var t = Math.ceil(e / 1500 * 94);
@@ -1401,7 +1401,7 @@ window.__require = function e(t, n, o) {
         cc._RF.push(t, "197e1hfNnxIcJx73V3VhUxY", "HttpManagerJs");
         var a = e("GameConfig"),
             i = (c(o = {
-                //URL: "http://www.wesane.com/h5service.php/Interface/services",
+                // URL: "",
                 cacheList: null,
                 isBusy: null,
                 req: null,
@@ -1420,7 +1420,7 @@ window.__require = function e(t, n, o) {
                 }), this.isBusy || this.sendOne()
             }), c(o, "sendOne", function() {
                 if (0 != this.cacheList.length) {
-                    this.isBusy = !0, this.perform = this.cacheList.shift(), this.req = cc.loader.getXMLHttpRequest(), this.req.onreadystatechange = this.onDataHandler.bind(this), this.req.onerror = this.onErrorHandler.bind(this), this.req.ontimeout = this.onTimeoutHandler.bind(this), this.req.timeout = 2e3, cc.log("pos", this.URL), this.req.open("POST", this.URL), this.req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+                    this.isBusy = !0, this.perform = this.cacheList.shift(), this.req = cc.loader.getXMLHttpRequest(), this.req.onreadystatechange = this.onDataHandler.bind(this), this.req.onerror = this.onErrorHandler.bind(this), this.req.ontimeout = this.onTimeoutHandler.bind(this), this.req.timeout = 2e3, cc.log("pos", this.URL), this.req.open("GET", this.URL), this.req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
                     var e = this.returnLanguage();
                     console.log("gameIdid", this.retGameId);
                     var t = this.retGameId,
@@ -1512,7 +1512,7 @@ window.__require = function e(t, n, o) {
             p = function(e) {
                 function t() {
                     var t = null !== e && e.apply(this, arguments) || this;
-                    return t.Rocker = null, t.stick = null, t.Max_r = 100, t.RockerJS = null, t.speed = 400, t.Arrow = null, t.knife = null, t.startPoint = null, t.touchPoint = null, t.endPoint = null, t.ddir = cc.v2(0, 0), t.isCut = !1, t.comboTime = 0, t.comboInterval = .4, t.comboNumber = 0, t.comboMaxNum = 7, t.touchNum = 0, t.createFruitCount = 0, t.istest = !1, t
+                    return t.Rocker = null, t.stick = null, t.Max_r = 100, t.RockerJS = null, t.speed = 400, t.Arrow = null, t.knife = null, t.startPoint = null, t.touchPoint = null, t.endPoint = null, t.ddir = cc.v2(0, 0), t.isCut = !1, t.comboTime = 0, t.comboInterval = .4, t.comboNumber = 0, t.comboMaxNum = 7, t.createFruitCount = 0, t.istest = !1, t
                 }
                 var n;
                 return o(t, e), n = t, t.prototype.onLoad = function() {
@@ -1523,7 +1523,6 @@ window.__require = function e(t, n, o) {
                     this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this), this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this), this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this), this.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchEnd, this)
                 }, t.prototype.onTouchStart = function(e) {
                     if (i.default.playerTouch && null != a.default.Instance.targetFruit) {
-                        this.touchNum = 1;
                         var t = this.node.convertToNodeSpaceAR(e.getLocation()).x,
                             n = a.default.Instance.targetFruit.y;
                         cc.tween(a.default.Instance.targetFruit).to(.1, {
@@ -1531,10 +1530,10 @@ window.__require = function e(t, n, o) {
                         }).start()
                     }
                 }, t.prototype.onTouchMove = function(e) {
-                    i.default.playerTouch && null != a.default.Instance.targetFruit && (this.touchNum = 1, a.default.Instance.targetFruit.x = this.node.convertToNodeSpaceAR(e.getLocation()).x)
+                    i.default.playerTouch && null != a.default.Instance.targetFruit && (a.default.Instance.targetFruit.x = this.node.convertToNodeSpaceAR(e.getLocation()).x)
                 }, t.prototype.onTouchEnd = function(e) {
                     var t = this;
-                    i.default.playerTouch && null != a.default.Instance.targetFruit && 1 == this.touchNum && (this.touchNum = 0, a.default.Instance.targetFruit.getComponent(cc.PhysicsCircleCollider).radius = a.default.Instance.targetFruit.height / 2, a.default.Instance.targetFruit.getComponent(cc.PhysicsCircleCollider).apply(), a.default.Instance.targetFruit.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic, a.default.Instance.targetFruit.getComponent(cc.RigidBody).linearVelocity = cc.v2(0, -800), a.default.Instance.targetFruit = null, this.scheduleOnce(function() {
+                    i.default.playerTouch && null != a.default.Instance.targetFruit && (a.default.Instance.targetFruit.getComponent(cc.PhysicsCircleCollider).radius = a.default.Instance.targetFruit.height / 2, a.default.Instance.targetFruit.getComponent(cc.PhysicsCircleCollider).apply(), a.default.Instance.targetFruit.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic, a.default.Instance.targetFruit.getComponent(cc.RigidBody).linearVelocity = cc.v2(0, -800), a.default.Instance.targetFruit = null, this.scheduleOnce(function() {
                         i.default.GameUpdateCtrl && (0 == t.createFruitCount ? (a.default.Instance.createOneFruit(0), t.createFruitCount++) : 1 == t.createFruitCount ? (a.default.Instance.createOneFruit(0), t.createFruitCount++) : 2 == t.createFruitCount ? (a.default.Instance.createOneFruit(1), t.createFruitCount++) : 3 == t.createFruitCount ? (a.default.Instance.createOneFruit(2), t.createFruitCount++) : 4 == t.createFruitCount ? (a.default.Instance.createOneFruit(2), t.createFruitCount++) : 5 == t.createFruitCount ? (a.default.Instance.createOneFruit(3), t.createFruitCount++) : t.createFruitCount > 5 && (a.default.Instance.createOneFruit(s.default.RandomInteger(0, 5)), t.createFruitCount++))
                     }, .5))
                 }, t.prototype.closeTouch = function() {
@@ -1755,21 +1754,30 @@ window.__require = function e(t, n, o) {
                 gameOverToEnd: cc.Node
             },
             onLoad: function() {
-                cc.director.getCollisionManager().enabled = !0, cc.director.getPhysicsManager().enabled = !0, this.gameOveEndBool = !1, this.gameOverNum = 0, this.gameWidth = cc.winSize.width, this.gameHeight = cc.winSize.height, o.playNum, o.playNum++, c.loadingLayer("panel/LinkIconSpr"), o.mainGameJs = this, o.publicGameBool || this.play()
+                cc.director.getCollisionManager().enabled = !0,
+                cc.director.getPhysicsManager().enabled = !0,
+                this.gameOveEndBool = !1,
+                this.gameOverNum = 0,
+                this.gameWidth = cc.winSize.width,
+                this.gameHeight = cc.winSize.height,
+                o.playNum,
+                o.playNum++,
+                c.loadingLayer("panel/LinkIconSpr"),
+                o.mainGameJs = this, o.publicGameBool || this.play()
             },
             play: function() {
                 console.log(1);
                 var e = this;
-                adBreak({
-                    type: "next",
-                    name: "restart-game",
-                    beforeBreak: function() {
-                        e.enableButtons()
-                    },
-                    afterBreak: function() {
-                        e.enableButtons()
-                    }
-                })
+                // adBreak({
+                //     type: "next",
+                //     name: "restart-game",
+                //     beforeBreak: function() {
+                //         e.enableButtons()
+                //     },
+                //     afterBreak: function() {
+                //         e.enableButtons()
+                //     }
+                // })
             },
             enableButtons: function() {},
             addTouchEvents: function() {
@@ -2021,9 +2029,9 @@ window.__require = function e(t, n, o) {
                         if (a.playNum >= 1) return;
                         a.playNum++
                     }
-                    a.launchScene = e, a.Bros = t, a.caS = n, this.curType = 1, this.getHttpGameId(), this.gamePV_load(), console.log("thisg", this.gameHttpId), o.httpInitUrl(this.gameHttpId);
+                    a.launchScene = e, a.Bros = t, a.caS = n, this.curType = 1, this.getHttpGameId(), this.gamePV_load(), console.log("thisg", this.gameHttpId), o.httpInitUrl(this.gameHttpId), o.send("103", null, this.getLinkGameReturn, this);
                     var c = this.initLanguage();
-                    this.gameNameText = c.game_name, this.gameInfoText = c.game_info, this.txtStartText = c.txtStart, this.txtMoreText = c.txtMore, this.txtAgainText = c.txtAgain, this.gameEndLText = c.gameEndL, this.gameEndL1Text = c.gameEndL1, this.bgLayRgb = c.bgRgb, this.gameEndName1 = c.gameT2, this.gameEndName2 = c.gameT3, this.gameEndUrl1 = c.gameUrl1, this.gameEndUrl2 = c.gameUrl2, this.langugeType = this.curType, i.goToCover(this.adShowBefore, this.adShowAfter, e, t, n)
+                    this.gameNameText = c.game_name, this.gameInfoText = c.game_info, this.txtStartText = c.txtStart, this.txtMoreText = c.txtMore, this.txtAgainText = c.txtAgain, this.gameEndLText = c.gameEndL, this.gameEndL1Text = c.gameEndL1, this.bgLayRgb = c.bgRgb, this.gameEndName1 = c.gameT2, this.gameEndName2 = c.gameT3, this.gameEndUrl1 = c.gameUrl1, this.gameEndUrl2 = c.gameUrl2, this.langugeType = this.curType
                 },
                 getHttpGameId: function() {
                     var e = window.location.href,
@@ -2036,13 +2044,13 @@ window.__require = function e(t, n, o) {
                         i = c.substring(c.lastIndexOf("/game/") + 1, c.length).split("/");
                     i.length >= 2 && (a = i[1]), this.gameHttpId = a, cc.log("gameId", a);
                     e.substring(e.lastIndexOf("//") + 4, e.lastIndexOf("com") + 3);
-                    //this.moreGameUrl = "http://m.wesane.com/"
+                    // this.moreGameUrl = "http://m.wesane.com/"
                 },
                 gameOverShowText: function(e, t) {
-                    //this.ajaxLoad("http://www.wesane.com/admin.php/Gamescore/saveGamescore", "gameScore=" + e + "&gameId=" + this.gameHttpId + "&gameType=" + t, this.scoreResult)
+                    // this.ajaxLoad("http://www.wesane.com/admin.php/Gamescore/saveGamescore", "gameScore=" + e + "&gameId=" + this.gameHttpId + "&gameType=" + t, this.scoreResult)
                 },
                 gamePV_load: function() {
-                    //this.ajaxLoad("http://www.wesane.com/admin.php/Activityshow/gamelogo", "gameID=" + this.gameHttpId, this.ajaxOnLogoResult)
+                    // this.ajaxLoad("http://www.wesane.com/admin.php/Activityshow/gamelogo", "gameID=" + this.gameHttpId, this.ajaxOnLogoResult)
                 },
                 ajaxOnLogoResult: function() {},
                 ajaxLoad: function(e, t, n) {
@@ -3255,7 +3263,12 @@ window.__require = function e(t, n, o) {
                 }, 2)
             },
             checkOnEdge: function(e) {
-                this.node.x > GameData.gameWidth / 2 + 100 ? e ? this.setMosquitoBackSpeed() : this.node.active = !1 : this.node.x < -GameData.gameWidth / 2 - 100 ? e ? this.setMosquitoBackSpeed() : this.node.active = !1 : this.node.y > GameData.gameHeight / 2 + 100 ? e ? this.setMosquitoBackSpeed() : this.node.active = !1 : this.node.y < -GameData.gameHeight / 2 - 100 && (e ? this.setMosquitoBackSpeed() : this.node.active = !1)
+                this.node.x > GameData.gameWidth / 2 + 100 ? e ? this.setMosquitoBackSpeed()
+                    : this.node.active = !1 : this.node.x < -GameData.gameWidth / 2 - 100 ? e ?
+                    this.setMosquitoBackSpeed() : this.node.active = !1 :
+                    this.node.y > GameData.gameHeight / 2 + 100 ? e ? this.setMosquitoBackSpeed() :
+                        this.node.active = !1 : this.node.y < -GameData.gameHeight / 2 - 100
+                        && (e ? this.setMosquitoBackSpeed() : this.node.active = !1)
             }
         });
         var o = {
@@ -3375,6 +3388,7 @@ window.__require = function e(t, n, o) {
                         }).start()))
                     }
                 }, t.prototype.createBoom = function() {
+
                     var e = r.default.Spawn("boom", cc.find("Canvas/upEffectParent"));
                     e.position = this.node.position, e.runAction(cc.sequence(cc.delayTime(.5), cc.fadeOut(.5)))
                 }, t.prototype.createStar = function() {
@@ -3385,8 +3399,11 @@ window.__require = function e(t, n, o) {
                         o = this.node.y;
                     e.position = cc.v2(s.default.RandomInteger(n, t), o), e.runAction(cc.fadeOut(2))
                 }, t.prototype.planeBoomEffect = function() {
+console.log('12')
                     r.default.Spawn("boom", cc.find("Canvas/upEffectParent")).position = s.default.convetOtherNodeSpaceAR(this.node, cc.find("Canvas/upEffectParent"))
                 }, t.prototype.clockEoilffect = function(e, t) {
+                    console.log('12')
+
                     for (var n = 0; n < 3; n++) setTimeout(function() {
                         var t = r.default.Spawn("star", cc.find("Canvas/upEffectParent"));
                         t.position = e.position, t.scale = .3, t.runAction(cc.sequence(cc.scaleTo(.5, 1.1), cc.fadeOut(.5)))
@@ -3673,6 +3690,7 @@ window.__require = function e(t, n, o) {
                         r.default.Despawn("shell", e)
                     }))), e.runAction(cc.repeatForever(cc.rotateBy(3, 1080)))
                 }, t.prototype.onCollisionEnter = function(e, t) {
+                    alert("123")
                     "shell" == e.node.group && 2 == e.node.getComponent("shellData").shellLife ? e.node.getComponent("shellData").shellLife -= 1 : "shell" == e.node.group && 1 == e.node.getComponent("shellData").shellLife && (u.default.Instance.Play(2, !1, 1), t.node.active = !1, s.default.Instance.cannonNodeArr[this.cannonNumber] = 0, this.createCannonSui(t.node), e.node.stopAllActions(), i.default.score += 10, l.default.Instance.SetScoreTween(i.default.score), r.default.Despawn("shell", e.node), r.default.Despawn("peaCannon", t.node))
                 }, t.prototype.onCollisionStay = function(e, t) {}, t.prototype.onCollisionExit = function(e, t) {}, t.prototype.createCannonSui = function(e) {
                     var t = cc.instantiate(this.peaSuiPre);
